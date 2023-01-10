@@ -5,12 +5,15 @@ Console.log after assigning the value using let.
 ![](<image/let(1).png>)
 
 Console.log before assigning the value using let.
+
 ![](<image/let(2).png>)
 
 Console.log before assigning the value using const.
+
 ![](image/const.png)
 
 Typeof output
+
 ![](image/typeof.png)
 
 > How can you find if a variable is an array or NaN besides typeof?
