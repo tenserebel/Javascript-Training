@@ -1,0 +1,25 @@
+<!-- Create a simple HTML file in notepad (do not use VSCode). To this, add some javascript by
+
+Writing javascript between script tags
+
+Writing javascript in a file and passing that as a src in the script tag -->
+
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      // Function to change the color to red added from the html tag.
+
+      function ColorChange() {
+        const myElement = document.getElementById("header");
+        myElement.style.color = "red";
+      }
+    </script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1 id="header">Hello</h1>
+    <button onclick="ColorChange()">Red</button>
+    <button onclick="ColorChangeToGreen()">Green</button>
+  </body>
+</html>

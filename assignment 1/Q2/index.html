@@ -1,0 +1,11 @@
+<!-- Since, script elements are loaded in order, if we place the script above the body it won't work because the body tag hasn't loaded yet.
+    Therefore, we have to place it after the body tag (end of the body tag) so that the whole body would load before it being manipulated.
+ -->
+
+<html>
+  <head> </head>
+  <body>
+    <h1 id="test">Hello World!</h1>
+  </body>
+  <script src="index.js"></script>
+</html>
