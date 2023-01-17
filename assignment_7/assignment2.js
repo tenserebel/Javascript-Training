@@ -15,15 +15,15 @@ let users = [
   },
 ];
 
-function mapBy(inpArray) {
+function mapBy(inpArray, key) {
   res_obj = {};
   for (let i = 0; i < inpArray.length; i++) {
-    res_obj[inpArray[i].first_name] = inpArray[i];
+    res_obj[inpArray[i][key]] = inpArray[i];
   }
   return res_obj;
 }
 
-console.log(mapBy(users));
+console.log(mapBy(users, "id"));
 
 // Q2)
 
