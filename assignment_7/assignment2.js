@@ -123,7 +123,7 @@ let userEmails = [
 
 function mergeById(inpArray1, inpArray2) {
   return inpArray1.map((firstArray) => ({
-    ...inpArray2.find((item) => item.id === firstArray.id && item),
+    ...inpArray2.find((item) => item.id === firstArray.id),
     ...firstArray,
   }));
 }
