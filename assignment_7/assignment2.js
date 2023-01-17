@@ -122,10 +122,10 @@ let userEmails = [
 ];
 
 function mergeById(inpArray1, inpArray2) {
-  let res_array = inpArray1.map((item, i) =>
-    Object.assign({}, item, inpArray2[i])
-  );
-  return res_array;
+  return inpArray1.map((firstArray) => ({
+    ...inpArray2.find((item) => item.id === firstArray.id && item),
+    ...firstArray,
+  }));
 }
 
 console.log(mergeById(userNames, userEmails));
